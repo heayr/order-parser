@@ -46,7 +46,10 @@ export default function OrderParser() {
       if (currentSection === 'delivery') {
         if (line.includes('Доставка')) orderInfo.delivery.deliveryMethod = line.split(' - ')[1];
         if (line.includes('Адрес терминала:')) orderInfo.delivery.terminalAddress = line.split(': ')[1];
-      }
+            if (line.includes('Москва'))  orderInfo.delivery.deliveryMethod = line.split(',')[1];
+            if (line.includes('Офис')) orderInfo.delivery.terminalAddress = line.split(' ')[1];
+        }
+    
 
       if (currentSection === 'payment') {
         if (line.includes('Способ оплаты:')) orderInfo.payment.paymentMethod = line.split(': ')[1];

@@ -4,7 +4,7 @@ import OrderParser from "./Components/test"
 export default function Home() {
   return (
     <>
-    <Form/>
+    {/* <Form/> */}
     <OrderParser/>
     </>
   )
