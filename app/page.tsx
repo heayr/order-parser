@@ -1,11 +1,12 @@
 import Form from "./Components/testForm"
-import OrderParser from "./Components/Form"
+import OrderParser from "./parser/parser"
+import Board from "./Components/Board"
 
 export default function Home() {
   return (
     <>
-    {/* <Form/> */}
-    <OrderParser/>
+    <Board/>
+    {/* <OrderParser/> */}
     </>
   )
 }
