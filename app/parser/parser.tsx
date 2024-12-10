@@ -1,5 +1,11 @@
 "use client"
 import { useState } from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Заказ парсер",
+  description: "Парсер заказов для сайта",
+}
 
 export default function OrderParser() {
   const [orderText, setOrderText] = useState('');

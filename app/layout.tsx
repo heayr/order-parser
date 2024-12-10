@@ -12,7 +12,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
+// инфо на вкладке - metadata 
 export const metadata: Metadata = {
   title: "Доска задач",
   description: "В процессе разработки Егором Мышинским",
