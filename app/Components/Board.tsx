@@ -7,6 +7,8 @@ function Board() {
     <>
      <div>Board</div>
      <Link href="/parser" >Ссылка на парсер</Link>
+     <br />
+     <Link href="/users" >Пользователи</Link>
     </>
    
   )
